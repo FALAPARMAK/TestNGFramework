@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [groups]">
+  <listeners>
+    <listener class-name="com.syntax.utils.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.syntax.testcases.LocationWithExcel">
+        <methods>
+          <include name="generateReport"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="tearDown"/>
+          <include name="Verify"/>
+        </methods>
+      </class> <!-- com.syntax.testcases.LocationWithExcel -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [groups] -->

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.syntax.testcases.MyLoginPageTest">
+        <methods>
+          <include name="generateReport"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="loginOrange"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.syntax.testcases.MyLoginPageTest -->
+      <class name="com.syntax.testcases.LoginPageTest">
+        <methods>
+          <include name="doLogin"/>
+          <include name="generateReport"/>
+          <include name="AddEmployee"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="loginToOrangeHRM"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.syntax.testcases.LoginPageTest -->
+      <class name="com.syntax.testcases.MyAddEmpeloyeeTest">
+        <methods>
+          <include name="AddEmp"/>
+          <include name="generateReport"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.syntax.testcases.MyAddEmpeloyeeTest -->
+      <class name="com.syntax.testcases.AddEmployeePageTest">
+        <methods>
+          <include name="addEmployee"/>
+          <include name="generateReport"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.syntax.testcases.AddEmployeePageTest -->
+      <class name="com.syntax.testcases.LoginTest">
+        <methods>
+          <include name="loginToOrangeHRM"/>
+          <include name="generateReport"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="doLogin"/>
+          <include name="tearDown"/>
+          <include name="negativeLogin"/>
+        </methods>
+      </class> <!-- com.syntax.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
